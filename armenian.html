@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas Event Schedule</title>
+
+  <!-- New Beautiful Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="ChristmasJazz.mp3" loop></audio>
+
+  <header class="hero">
+    <h1>🎄 Christmas Festival 2025 🎄</h1>
+    <p>Պարային երեկո, պայծառ լույսեր և տոնական տրամադրություն։</p>
+  </header>
+
+  <section class="schedule">
+    <h2>Միջոցառման Ծրագիր</h2>
+
+    <div class="event">
+      <h3>Հյուրասիրություն և Խաղեր</h3>
+      <p class="time">15:00 - 16:30</p>
+      <p class="desc">Վայելեք ձմեռային համեղ հյուրասիրություն և մասնակցեք զվարճալի և ամանորյա տրամադրությունով լի խաղերի։</p>
+    </div>
+
+    <div class="event">
+      <h3>Ամանորյա կինոդիտում</h3>
+      <p class="time">16։30 - 17։00</p>
+      <p class="desc">Հանգստացեք և դիտեք դասական ու սիրելի Ամանորյա ֆիլմերից փոքրիկ հատվածներ։</p>
+    </div>
+
+    <div class="event">
+      <h3>DJ</h3>
+      <p class="time">17:00 - 18:30</p>
+      <p class="desc">Միացեք տոնական երաժշտությանը, տարվա ջերմ հիթերին և ձմեռային ուրախ տրամադրությանը։</p>
+    </div>
+
+    <div class="event">
+      <h3>Մրցանակաբաշխություն</h3>
+      <p class="time">18։30 - 19։00</p>
+      <p class="desc">Տարվա ամփոփում՝ հաճելի անակնկալներով, հիշվող մրցանակներով և ուրախ պահերով։</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>🎁 Շնորհավոր Գալիք Ամանոր և Սուրբ Ծնունդ։ 🎆</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Play music if user clicked language button
+    window.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("bgMusic");
+      if (localStorage.getItem("playMusic") === "true") {
+        audio.volume = 0.7;
+        audio.play().catch(() => {}); // ignore autoplay errors
+      }
+    });
+  </script>
+</body>
+</html>
